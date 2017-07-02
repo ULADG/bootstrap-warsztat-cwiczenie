@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	font-family: 'Roboto Slab', serif;
 	color: #777;
+	
 }
 
 h1 {
@@ -23,6 +24,7 @@ a.btn-blue, .btn-blue {
 	text-transform: uppercase;
 	color: #fff;
 	transition: all .3s;
+	padding: 15 px 30px;
 }
  
 a.btn-blue:hover, .btn-blue:hover {
@@ -34,6 +36,7 @@ a.btn-blue:hover, .btn-blue:hover {
 #main nav {
 	background-color: transparent;
 	border: 0;
+    background: none;
 	
 }
 
@@ -60,6 +63,7 @@ a.btn-blue:hover, .btn-blue:hover {
 		url(../img/header/pictures_on_the_wall.jpg);
 		background-size: cover;
 		position: relative;
+	
 }
 		
 #main-header .header-caption {
