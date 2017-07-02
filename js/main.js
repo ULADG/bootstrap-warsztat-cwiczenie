@@ -1,10 +1,23 @@
 $(function () {
+	
+	$("a[href*='#']").click(function() {
+		$('body').animate ({
+			scrollTop: $(this.hash).offset().top - 50 }, 500
+		);
+	});
 	$(window).scroll(function () {
-		if ($(document).scrollTop() >= 50) {
+		if ($(window).scrollTop() >= 50) {
 			$('#main-nav').addClass('scroll');
-			$('#main-nav').css({'transition': 'all 0.3s'});
+			$('#main-nav').css({
+				'transition': 'all 0.3s'
+			});
 		} else {
-				$('#main-nav').removeClass('scroll');
+			$('#main-nav').removeClass('scroll');
 		}
 	});
+
+	if ($(window).scrollTop() >= 50) {
+		$('#main-nav').addClass('scroll');
+	}
+
 });
