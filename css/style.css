@@ -1,43 +1,67 @@
-
-
-
 * {
 	box-sizing: border-box;
-	
 }
 
 body {
 	margin: 0;
 	font-family: 'Roboto Slab', serif;
 	color: #777;
-	
 }
 
 h1 {
 	font-size: 4em;
 }
 
-a.btn-blue, .btn-blue {
+h3 {
+	font-size: 1.2em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+}
+
+section {
+	padding: 60px 0;
+}
+
+section header {
+	margin-bottom: 70px;
+}
+
+section .section-heading {
+	text-transform: uppercase;
+		margin-bottom: 40px;
+	
+}
+
+section .section-description {
+	font-family: 'Droid Serif' sans-serif;
+	
+}
+a.btn-blue,
+.btn-blue {
 	background-color: #8ed8d6;
 	border: 1px solid #8ed8d6;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
 	transition: all .3s;
-	padding: 15 px 30px;
+	padding: 15px 30px;
 }
- 
-a.btn-blue:hover, .btn-blue:hover {
+
+a.btn-blue:hover,
+.btn-blue:hover {
 	background-color: #fff;
 	border: 1px solid #0ed8d6;
 	color: #0ed8d6;
 }
+
+
 /* Main nav style start */
+
 #main nav {
 	background-color: transparent;
 	border: 0;
-    background: none;
-	
 }
 
 #main-nav a.navbar-brand {
@@ -48,34 +72,77 @@ a.btn-blue:hover, .btn-blue:hover {
 
 #main-nav a {
 	color: #fff;
-	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 }
 
 #main-nav a:hover {
-	color:#8ed8d6;
-		
+	color: #8ed8d6;
+}
+#main-nav.scroll {
+	background-color: rgba(14, 216, 214, 0.85);
+}
+#main-nav scroll a {
+	color: #fff;
+}
+
+#main-nav scroll a:hover {
+	color: #777777;
 }
 
 #main-header {
 	height: 100vh;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-		url(../img/header/pictures_on_the_wall.jpg);
-		background-size: cover;
-		position: relative;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/pictures_on_the_wall.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+#main-header .header-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+#main-header .header-caption h1 {
+	color: #fff;
+	margin: 45px 0;
+	padding-bottom: 40px;
+}
+
+#main-header .header-caption h2 {
+	color: #fff;
+	font-family: 'Droid Serif', sans-serif;
+	font-size: 2.5em;
 	
 }
-		
-#main-header .header-caption {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			left: 0;
-			right: 0;
-			margin: auto;
-			text-align: center;
-	color: #fff;
-			
-	}
+
 
 /* Main nav style stop */
+
+/* section services start */
+
+#services .fa {
+	font-size:  3em;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	border: 1px solid #0ed8d6;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #0ed8d6;
+	transition: all .3s;
+	margin: 40px 0;
+	
+}
+#services .fa:hover {
+	color: #0ed8d6;
+	background-color: #fff;
+	transform: rotate(360deg);
+}
+
+
+
+/* section services stop */
